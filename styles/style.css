@@ -373,12 +373,12 @@ img {
 }
 .homeHeader .imgContainer {
   position: absolute;
-  bottom: -180px;
+  bottom: -200px;
   right: 0;
-  width: 40%;
-  border-top: 50px solid #fdfa69;
-  border-bottom: 50px solid #fdfa69;
-  border-left: 40px solid #fdfa69;
+  width: 800px;
+  border-top: 60px solid #fdfa69;
+  border-bottom: 60px solid #fdfa69;
+  border-left: 50px solid #fdfa69;
   border-right: none;
 }
 .homeHeader .imgContainer img {

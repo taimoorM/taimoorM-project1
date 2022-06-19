@@ -40,12 +40,12 @@
 
   .imgContainer {
     position: absolute;
-    bottom: -180px;
+    bottom: -200px;
     right: 0;
-    width: 40%;
-    border-top: 50px solid $primary;
-    border-bottom: 50px solid $primary;
-    border-left: 40px solid $primary;
+    width: 800px;
+    border-top: 60px solid $primary;
+    border-bottom: 60px solid $primary;
+    border-left: 50px solid $primary;
     border-right: none;
 
     img {
