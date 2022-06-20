@@ -408,3 +408,12 @@ img {
   text-align: left;
   margin-bottom: 40px;
 }
+
+.blog {
+  background-color: #fafafa;
+}
+.blog .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
