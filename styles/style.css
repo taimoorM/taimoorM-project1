@@ -289,6 +289,10 @@ h3 {
   font-size: 1.6rem;
 }
 
+p {
+  line-height: 32px;
+}
+
 ul,
 li,
 a,
@@ -322,6 +326,13 @@ img {
   max-width: 1280px;
   width: 90%;
   margin: 0 auto;
+}
+
+.button {
+  background-color: #4ceea7;
+  font-family: "Playfair Display", serif;
+  padding: 10px 15px;
+  text-transform: uppercase;
 }
 
 .homeHeader {
@@ -383,4 +394,17 @@ img {
 }
 .homeHeader .imgContainer img {
   width: 100%;
+}
+
+.about {
+  background-color: #effdf3;
+  padding: 200px 0 150px 0;
+}
+.about .wrapper {
+  margin-top: 50px;
+  text-align: center;
+}
+.about .wrapper p {
+  text-align: left;
+  margin-bottom: 40px;
 }

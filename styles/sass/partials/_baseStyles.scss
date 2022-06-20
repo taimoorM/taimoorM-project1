@@ -8,3 +8,10 @@ img {
   width: 90%;
   margin: 0 auto;
 }
+
+.button {
+  background-color: $secondary;
+  font-family: $headingFont;
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
