@@ -370,13 +370,14 @@ img {
   display: -ms-flexbox;
   display: flex;
   font-family: "Playfair Display", serif;
+  text-transform: uppercase;
 }
 .homeHeader ul li:not(:last-child) {
   margin-right: 50px;
 }
 .homeHeader ul a:hover,
 .homeHeader ul :focus {
-  border-bottom: 2px solid #4ceea7;
+  border-bottom: 4px solid #4ceea7;
 }
 .homeHeader h1 {
   text-align: center;
@@ -386,7 +387,6 @@ img {
   position: absolute;
   bottom: -200px;
   right: 0;
-  width: 50%;
   border-top: 60px solid #fdfa69;
   border-bottom: 60px solid #fdfa69;
   border-left: 50px solid #fdfa69;
@@ -411,7 +411,7 @@ img {
 
 .blog {
   background-color: #fafafa;
-  padding: 50px 0 30px 0;
+  padding: 70px 0 50px 0;
   position: relative;
 }
 .blog .wrapper {
@@ -422,6 +422,10 @@ img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 85vh;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .blog .row {
   display: -webkit-box;
@@ -430,6 +434,9 @@ img {
 }
 .blog .textContainer {
   width: 50%;
+}
+.blog p {
+  margin-bottom: 40px;
 }
 .blog .rowOne {
   -webkit-box-pack: end;
@@ -440,7 +447,38 @@ img {
   position: absolute;
   top: -30px;
   left: 0;
-  max-width: 50%;
+  width: 40%;
   -webkit-box-shadow: 40px 30px 0px -5px #fdfa69;
           box-shadow: 40px 30px 0px -5px #fdfa69;
+}
+.blog .rowOne .imgContainer img {
+  width: 100%;
+}
+.blog .rowOne .textContainer {
+  padding-left: 160px;
+}
+.blog .rowTwo {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.blog .rowTwo .imgContainer {
+  position: absolute;
+  bottom: -30px;
+  right: 0;
+  width: 40%;
+  -webkit-box-shadow: -40px 30px 0px -5px #fdfa69;
+          box-shadow: -40px 30px 0px -5px #fdfa69;
+}
+.blog .rowTwo .imgContainer img {
+  width: 100%;
+}
+.blog .rowTwo .textContainer {
+  padding-right: 160px;
+}
+.blog .rowTwo .textContainer h3 {
+  text-align: right;
+}
+.blog .rowTwo .textContainer .btnContainer {
+  text-align: right;
 }
