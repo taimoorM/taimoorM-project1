@@ -532,3 +532,26 @@ img {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.profile .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 100px 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.profile .imgContainer {
+  min-width: 20%;
+}
+.profile .imgContainer img {
+  -webkit-box-shadow: 40px 40px 0px -5px #fdfa69;
+          box-shadow: 40px 40px 0px -5px #fdfa69;
+}
+.profile .textContainer {
+  width: 66%;
+}
+.profile p {
+  margin-bottom: 50px;
+  margin-right: 20px;
+}
