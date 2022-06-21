@@ -6,7 +6,7 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    height: 85vh;
+    height: 90vh;
     justify-content: space-between;
   }
   .row {
@@ -25,10 +25,10 @@
     justify-content: flex-end;
     .imgContainer {
       position: absolute;
-      top: -30px;
+      top: -40px;
       left: 0;
       width: 40%;
-      box-shadow: 40px 30px 0px -5px $primary;
+      box-shadow: 50px 40px 0px -5px $primary;
 
       img {
         width: 100%;
@@ -44,10 +44,10 @@
     justify-content: flex-start;
     .imgContainer {
       position: absolute;
-      bottom: -30px;
+      bottom: -50px;
       right: 0;
       width: 40%;
-      box-shadow: -40px 30px 0px -5px $primary;
+      box-shadow: -50px 50px 0px -5px $primary;
 
       img {
         width: 100%;
