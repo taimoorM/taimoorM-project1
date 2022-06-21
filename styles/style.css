@@ -520,3 +520,15 @@ img {
   height: 50px;
   width: 50px;
 }
+
+.profile {
+  background-color: #effdf3;
+}
+.profile .bannerContainer {
+  height: 500px;
+  width: 100%;
+  background-image: url("../assets/banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
