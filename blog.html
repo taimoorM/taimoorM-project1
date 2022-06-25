@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="/styles/style.css" />
     <title>Blog</title>
   </head>
   <body>
@@ -22,15 +24,15 @@
       </div>
     </header>
     <main id="mainContent">
-      <section class="post">
-        <div class="wrapper">
-          <div class="imgContainer">
-            <img
-              src="./assets/blog-post-image.jpg"
-              alt="A person sitting in a field, taking a picture"
-            />
-          </div>
+      <div class="wrapper">
+        <section>
           <div class="postContainer">
+            <div class="imgContainer">
+              <img
+                src="./assets/blog-post-image.jpg"
+                alt="A person sitting in a field, taking a picture"
+              />
+            </div>
             <h2>Finding Great Locations</h2>
             <span><time>Monday May 4th, 2019</time> by Dieula</span>
 
@@ -80,7 +82,8 @@
                   nostrum aliquam sunt nam.
                 </p>
               </div>
-              <div class="comment">
+            </div>
+            <div class="comment">
               <div class="imgContinaer">
                 <img src="./assets/comment-2.jpg" alt="Profile Picture" />
               </div>
@@ -98,24 +101,23 @@
                 </p>
               </div>
             </div>
+            <form action="submit">
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" id="name" placeholder="Name" />
+              <label for="email" class="sr-only">Email address</label>
+              <input type="text" id="email" placeholder="Email address" />
+              <label for="comment" class="sr-only">Comment</label>
+              <textarea
+                id="comment"
+                cols="30"
+                rows="10"
+                placeholder="Comment"
+              ></textarea>
+              <button type="submit" class="button">Post</button>
+            </form>
           </div>
-
-          <form action="submit">
-            <label for="name" class="sr-only">Name</label>
-            <input type="text" id="name" placeholder="Name">
-            <label for="email" class="sr-only">Email address</label>
-            <input type="text" id="email" placeholder="Email address">
-            <label for="comment" class="sr-only">Comment</label>
-          <textarea
-            id="comment"
-            cols="30"
-            rows="10"
-            placeholder="Comment"
-          ></textarea>
-          <button type="submit" class="button">Post comment</button>
-          </form>
-        </div>
-      </section>
+        </section>
+      </div>
     </main>
   </body>
 </html>
