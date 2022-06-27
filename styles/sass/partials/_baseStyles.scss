@@ -15,3 +15,47 @@ img {
   padding: 10px 15px;
   text-transform: uppercase;
 }
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+
+  ul {
+    display: flex;
+    font-family: $headingFont;
+    text-transform: uppercase;
+
+    li:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    a {
+      padding: 5px;
+      transition: 0.3s border;
+      position: relative;
+
+      &:before,
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+        width: 0px;
+        height: 5px;
+        margin: 5px 0 0;
+        transition: all 0.2s ease-in-out;
+        transition-duration: 0.75s;
+        opacity: 0;
+        background-color: $secondary;
+      }
+
+      &:hover {
+        &::after,
+        &::before {
+          width: 100%;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}

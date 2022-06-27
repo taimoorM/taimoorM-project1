@@ -1,3 +1,5 @@
+//Homepage Header
+
 .homeHeader {
   background-image: url("../assets/header-image.jpg");
   background-size: cover;
@@ -35,22 +37,4 @@
   }
 }
 
-nav {
-  display: flex;
-  justify-content: flex-end;
-}
-
-ul {
-  display: flex;
-  font-family: $headingFont;
-  text-transform: uppercase;
-
-  li:not(:last-child) {
-    margin-right: 50px;
-  }
-
-  a:hover,
-  :focus {
-    border-bottom: 4px solid $secondary;
-  }
-}
+//BlOG HEADER
