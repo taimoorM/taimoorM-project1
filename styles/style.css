@@ -638,14 +638,32 @@ nav ul a:hover::after {
   width: 100%;
 }
 .blogMain .posts {
-  max-width: 56%;
+  max-width: 60%;
   margin-top: -245px;
+}
+.blogMain .posts .imgContainer {
+  padding-left: 40px;
 }
 .blogMain .posts .imgContainer img {
   width: 100%;
-  -webkit-box-shadow: -40px 40px 0px -5px #fdfa69;
-          box-shadow: -40px 40px 0px -5px #fdfa69;
+  -webkit-box-shadow: -45px 40px 0px -5px #fdfa69;
+          box-shadow: -45px 40px 0px -5px #fdfa69;
+}
+.blogMain .postContainer {
+  width: 768px;
+  padding: 80px 0 0 50px;
+  border: 4px solid #fdfa69;
+  border-right: none;
+}
+.blogMain .postContainer h2 {
+  margin-bottom: 15px;
+}
+.blogMain .postContainer span {
+  padding-left: 5px;
+}
+.blogMain .postContainer p {
+  margin-top: 60px;
 }
 .blogMain .sidebar {
-  max-width: 25%;
+  max-width: 30%;
 }

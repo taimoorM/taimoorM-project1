@@ -5,18 +5,38 @@
   width: 100%;
 
   .posts {
-    max-width: 56%;
+    max-width: 60%;
     margin-top: -245px;
 
     .imgContainer {
+      padding-left: 40px;
       img {
         width: 100%;
-        box-shadow: -40px 40px 0px -5px $primary;
+        box-shadow: -45px 40px 0px -5px $primary;
       }
     }
   }
 
+  .postContainer {
+    width: calc(1280px * 0.6);
+    padding: 80px 0 0 50px;
+    border: 4px solid $primary;
+    border-right: none;
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    span {
+      padding-left: 5px;
+    }
+
+    p {
+      margin-top: 60px;
+    }
+  }
+
   .sidebar {
-    max-width: 25%;
+    max-width: 30%;
   }
 }
