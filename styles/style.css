@@ -439,6 +439,7 @@ nav ul a:hover::after {
 }
 .blogHeader h1 {
   font-size: 4rem;
+  margin-top: -110px;
 }
 
 .about {
@@ -621,4 +622,30 @@ nav ul a:hover::after {
   margin: 0;
   color: #fafafa;
   text-align: center;
+}
+
+.blogMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+.blogMain .posts {
+  max-width: 56%;
+  margin-top: -245px;
+}
+.blogMain .posts .imgContainer img {
+  width: 100%;
+  -webkit-box-shadow: -40px 40px 0px -5px #fdfa69;
+          box-shadow: -40px 40px 0px -5px #fdfa69;
+}
+.blogMain .sidebar {
+  max-width: 25%;
 }

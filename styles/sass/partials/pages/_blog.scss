@@ -1,0 +1,22 @@
+.blogMain {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  width: 100%;
+
+  .posts {
+    max-width: 56%;
+    margin-top: -245px;
+
+    .imgContainer {
+      img {
+        width: 100%;
+        box-shadow: -40px 40px 0px -5px $primary;
+      }
+    }
+  }
+
+  .sidebar {
+    max-width: 25%;
+  }
+}
