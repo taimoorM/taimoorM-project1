@@ -637,33 +637,64 @@ nav ul a:hover::after {
           justify-content: space-between;
   width: 100%;
 }
-.blogMain .posts {
+
+.posts {
   max-width: 60%;
   margin-top: -245px;
 }
-.blogMain .posts .imgContainer {
+.posts .imgContainer {
   padding-left: 40px;
 }
-.blogMain .posts .imgContainer img {
+.posts .imgContainer img {
   width: 100%;
   -webkit-box-shadow: -45px 40px 0px -5px #fdfa69;
           box-shadow: -45px 40px 0px -5px #fdfa69;
 }
-.blogMain .postContainer {
-  width: 768px;
+
+.postContainer {
+  max-width: 768px;
+  width: 90%;
   padding: 80px 0 0 50px;
   border: 4px solid #fdfa69;
   border-right: none;
 }
-.blogMain .postContainer h2 {
+.postContainer h2 {
   margin-bottom: 15px;
 }
-.blogMain .postContainer span {
+.postContainer span {
   padding-left: 5px;
 }
-.blogMain .postContainer p {
+.postContainer p {
   margin-top: 60px;
 }
-.blogMain .sidebar {
+
+.commentsContainer {
+  max-width: 768px;
+  width: 90%;
+  padding: 50px 0 0 50px;
+}
+.commentsContainer h3 {
+  margin-bottom: 50px;
+}
+
+.comment {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 100px;
+}
+.comment p {
+  margin: 0;
+}
+.comment p:first-child {
+  margin-bottom: 10px;
+}
+
+.profileImg {
+  min-width: 90px;
+  margin-right: 40px;
+}
+
+.sidebar {
   max-width: 30%;
 }
