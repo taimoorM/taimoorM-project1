@@ -34,26 +34,21 @@ nav {
       transition: 0.3s border;
       position: relative;
 
-      &:before,
-      &:after {
+      &::after {
         content: "";
         position: absolute;
-        bottom: -10px;
+        bottom: -5px;
         left: 0;
         width: 0px;
-        height: 5px;
+        height: 4px;
         margin: 5px 0 0;
-        transition: all 0.2s ease-in-out;
-        transition-duration: 0.75s;
-        opacity: 0;
+        transition: width 0.4s ease-in-out;
         background-color: $secondary;
       }
 
       &:hover {
-        &::after,
-        &::before {
+        &::after {
           width: 100%;
-          opacity: 1;
         }
       }
     }

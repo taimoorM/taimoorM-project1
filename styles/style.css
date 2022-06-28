@@ -359,24 +359,20 @@ nav ul a {
   transition: 0.3s border;
   position: relative;
 }
-nav ul a:before, nav ul a:after {
+nav ul a::after {
   content: "";
   position: absolute;
-  bottom: -10px;
+  bottom: -5px;
   left: 0;
   width: 0px;
-  height: 5px;
+  height: 4px;
   margin: 5px 0 0;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
-  opacity: 0;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
   background-color: #4ceea7;
 }
-nav ul a:hover::after, nav ul a:hover::before {
+nav ul a:hover::after {
   width: 100%;
-  opacity: 1;
 }
 
 .homeHeader {
@@ -416,6 +412,33 @@ nav ul a:hover::after, nav ul a:hover::before {
 }
 .homeHeader .imgContainer img {
   width: 100%;
+}
+
+.blogHeader {
+  background-image: url("../assets/blog-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 60vh;
+  padding: 30px 0 0 0;
+}
+.blogHeader .wrapper {
+  height: 100%;
+}
+.blogHeader .headingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: inherit;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.blogHeader h1 {
+  font-size: 4rem;
 }
 
 .about {
