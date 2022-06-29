@@ -794,12 +794,16 @@ nav ul a:hover::after {
 }
 .sidebar .imgContainer img {
   width: 100%;
+  -webkit-box-shadow: 20px 5px 0px -5px #fafafa;
+          box-shadow: 20px 5px 0px -5px #fafafa;
 }
 
 .sidebarContainer {
   background-color: #fafafa;
   padding: 20px;
   width: 70%;
+  -webkit-box-shadow: 15px 0px 0px 0px #fafafa;
+          box-shadow: 15px 0px 0px 0px #fafafa;
 }
 .sidebarContainer span {
   font-weight: bold;
