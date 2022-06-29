@@ -419,7 +419,7 @@ nav ul a:hover::after {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 60vh;
+  height: 650px;
   padding: 30px 0 0 0;
 }
 .blogHeader .wrapper {
@@ -430,14 +430,15 @@ nav ul a:hover::after {
   display: -ms-flexbox;
   display: flex;
   height: inherit;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 .blogHeader h1 {
+  width: 66%;
   font-size: 4rem;
   margin-top: -110px;
 }
@@ -639,20 +640,21 @@ nav ul a:hover::after {
 }
 
 .posts {
-  max-width: 60%;
-  margin-top: -245px;
+  max-width: 70%;
+  width: 63%;
+  margin-top: -275px;
 }
 .posts .imgContainer {
   padding-left: 40px;
 }
 .posts .imgContainer img {
   width: 100%;
-  -webkit-box-shadow: -45px 40px 0px -5px #fdfa69;
-          box-shadow: -45px 40px 0px -5px #fdfa69;
+  -webkit-box-shadow: -45px 50px 0px -5px #fdfa69;
+          box-shadow: -45px 50px 0px -5px #fdfa69;
 }
 
 .postContainer {
-  max-width: 768px;
+  max-width: 896px;
   width: 90%;
   padding: 80px 0 0 50px;
   border: 4px solid #fdfa69;
@@ -669,7 +671,7 @@ nav ul a:hover::after {
 }
 
 .commentsContainer {
-  max-width: 768px;
+  max-width: 896px;
   width: 90%;
   padding: 50px 0 0 50px;
 }
