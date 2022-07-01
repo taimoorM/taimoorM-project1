@@ -34,7 +34,7 @@
     </header>
     <main id="#mainContent">
       <div class="wrapper">
-        <div class="contactInfo">
+        <section class="contactInfo">
           <ul>
             <li>
               <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
@@ -56,8 +56,31 @@
             Toronto, Ontario<br />
             M5V2D5
           </address>
-        </div>
+        </section>
+        <section class="contactForm">
+          <form action="3" class="form">
+            <fieldset>
+              <label for="name" class="sr-only">Name</label>
+              <input type="text" id="name" placeholder="Name" />
+              <label for="email" class="sr-only">Email address</label>
+              <input type="text" id="email" placeholder="Email address" />
+            </fieldset>
+            <label for="message" class="sr-only">Comment</label>
+            <textarea
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+            ></textarea>
+            <button type="submit" class="button">Submit</button>
+          </form>
+        </section>
       </div>
     </main>
+    <footer class="footer">
+      <div class="wrapper">
+        <p>Copyright © 2018 HackerYou</p>
+      </div>
+    </footer>
   </body>
 </html>
