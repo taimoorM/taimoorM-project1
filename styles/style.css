@@ -468,7 +468,7 @@ nav ul a:hover::after {
 }
 .contactHeader h1 {
   font-size: 4rem;
-  margin-bottom: 100px;
+  margin: 0 0 100px 50px;
 }
 
 .form {
@@ -479,6 +479,8 @@ nav ul a:hover::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 50px;
+  background-color: #fafafa;
 }
 .form fieldset {
   padding: 0;
@@ -493,6 +495,7 @@ nav ul a:hover::after {
 .form input {
   width: 50%;
   border: none;
+  background-color: #fafafa;
   border-bottom: 2px solid #4ceea7;
   font-family: "Roboto", sans-serif;
   color: #2c2c2c;
@@ -523,6 +526,7 @@ nav ul a:hover::after {
   border: 2px solid #4ceea7;
   padding: 20px;
   color: #2c2c2c;
+  background-color: #fafafa;
   font-family: "Roboto", sans-serif;
   margin-bottom: 50px;
   -webkit-transition: border 0.3s;
@@ -866,10 +870,34 @@ nav ul a:hover::after {
 }
 
 .contactForm {
-  padding: 50px;
   width: 72%;
-  background-color: #fff;
   margin-top: -425px;
+}
+.contactForm .form {
+  padding-top: 100px;
   -webkit-box-shadow: -45px 45px 0px -5px #fdfa69;
           box-shadow: -45px 45px 0px -5px #fdfa69;
+}
+
+.contactInfo {
+  margin-right: 100px;
+}
+.contactInfo > *:not(:last-child) {
+  margin-bottom: 20px;
+}
+.contactInfo ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contactInfo ul li:not(last-child) {
+  margin-right: 20px;
+}
+.contactInfo h4 {
+  font-size: 26px;
+  letter-spacing: 1.1px;
+}
+.contactInfo address {
+  line-height: 32px;
+  white-space: nowrap;
 }

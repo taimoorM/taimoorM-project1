@@ -8,9 +8,35 @@
 }
 
 .contactForm {
-  padding: 50px;
   width: 72%;
-  background-color: #fff;
+
   margin-top: -425px;
-  box-shadow: -45px 45px 0px -5px $primary;
+
+  .form {
+    padding-top: 100px;
+    box-shadow: -45px 45px 0px -5px $primary;
+  }
+}
+
+.contactInfo {
+  margin-right: 100px;
+  & > *:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  ul {
+    display: flex;
+    li:not(last-child) {
+      margin-right: 20px;
+    }
+  }
+
+  h4 {
+    font-size: 26px;
+    letter-spacing: 1.1px;
+  }
+  address {
+    line-height: 32px;
+    white-space: nowrap;
+  }
 }

@@ -1,6 +1,8 @@
 .form {
   display: flex;
   flex-direction: column;
+  padding: 50px;
+  background-color: $white;
 
   fieldset {
     padding: 0;
@@ -14,6 +16,7 @@
   input {
     width: 50%;
     border: none;
+    background-color: $white;
     border-bottom: 2px solid $secondary;
     font-family: $bodyFont;
     color: $black;
@@ -35,6 +38,7 @@
     border: 2px solid $secondary;
     padding: 20px;
     color: $black;
+    background-color: $white;
     font-family: $bodyFont;
     margin-bottom: 50px;
     transition: border 0.3s;
