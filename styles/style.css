@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&family=Roboto&display=swap");
 html {
   line-height: 1.15;
@@ -801,9 +800,13 @@ nav ul a:hover::after {
 .sidebarContainer {
   background-color: #fafafa;
   padding: 20px;
-  width: 70%;
+  width: 384px;
+  max-width: 90%;
   -webkit-box-shadow: 15px 0px 0px 0px #fafafa;
           box-shadow: 15px 0px 0px 0px #fafafa;
+}
+.sidebarContainer p {
+  padding-left: 5px;
 }
 .sidebarContainer span {
   font-weight: bold;
@@ -813,11 +816,10 @@ nav ul a:hover::after {
 }
 .sidebarContainer li {
   line-height: 32px;
-}
-.sidebarContainer li::before {
-  content: "•";
+  list-style: disc;
   color: #4ceea7;
-  font-weight: bold;
-  display: inline-block;
-  width: 1em;
+  margin-left: 20px;
+}
+.sidebarContainer li a {
+  color: #2c2c2c;
 }

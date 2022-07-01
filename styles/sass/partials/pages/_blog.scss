@@ -86,9 +86,13 @@
 .sidebarContainer {
   background-color: $white;
   padding: 20px;
-  width: 70%;
+  width: calc(1280px * 0.3);
+  max-width: 90%;
   box-shadow: 15px 0px 0px 0px $white;
 
+  p {
+    padding-left: 5px;
+  }
   span {
     font-weight: bold;
   }
@@ -99,12 +103,11 @@
 
   li {
     line-height: 32px;
-    &::before {
-      content: "\2022";
-      color: $secondary;
-      font-weight: bold;
-      display: inline-block;
-      width: 1em;
+    list-style: disc;
+    color: $secondary;
+    margin-left: 20px;
+    a {
+      color: $black;
     }
   }
 }
