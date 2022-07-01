@@ -61,3 +61,28 @@
     margin-top: -110px;
   }
 }
+
+//Contact Header
+.contactHeader {
+  background-image: url("../assets/contact-header.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 650px;
+  padding: 30px 0 0 0;
+
+  .wrapper {
+    height: 100%;
+  }
+  .headingContainer {
+    display: flex;
+    height: inherit;
+    justify-content: center;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 100px;
+  }
+}
