@@ -23,15 +23,29 @@
   .wrapper {
     display: flex;
     flex-direction: column;
-    height: 90vh;
-    justify-content: space-between;
+    max-width: none;
+    width: 100%;
   }
   .row {
     display: flex;
+    justify-content: space-between;
+  }
+
+  .imgContainer {
+    min-width: 40%;
   }
 
   .textContainer {
-    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    width: 40%;
+  }
+
+  .inner {
+    max-width: calc(1280px * 0.4);
+    width: 90%;
   }
 
   p {
@@ -43,32 +57,29 @@
   }
 
   .rowOne {
-    justify-content: flex-end;
+    margin-bottom: 100px;
     .imgContainer {
-      position: absolute;
-      top: -40px;
-      left: 0;
-      width: 40%;
-      box-shadow: 50px 40px 0px -5px $primary;
+      justify-self: flex-start;
+      margin-top: -114px;
+
+      img {
+        box-shadow: 50px 40px 0px -5px $primary;
+      }
     }
 
     .textContainer {
-      padding-left: 160px;
+      align-items: flex-start;
     }
   }
 
   .rowTwo {
-    justify-content: flex-start;
     .imgContainer {
-      position: absolute;
-      bottom: -50px;
-      right: 0;
-      width: 40%;
+      margin-bottom: -130px;
       box-shadow: -50px 50px 0px -5px $primary;
     }
 
     .textContainer {
-      padding-right: 160px;
+      // padding-right: 160px;
     }
 
     h3 {
@@ -159,7 +170,7 @@
   }
 
   .imgContainer {
-    width: calc(100% / 3 - 30px);
+    width: calc((100% / 3) - 30px);
   }
 }
 
