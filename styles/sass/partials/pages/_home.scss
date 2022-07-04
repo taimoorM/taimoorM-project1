@@ -6,11 +6,11 @@
   .wrapper {
     margin-top: 50px;
     text-align: center;
+  }
 
-    p {
-      text-align: left;
-      margin-bottom: 40px;
-    }
+  p {
+    text-align: left;
+    margin-bottom: 40px;
   }
 }
 
@@ -73,10 +73,6 @@
     .imgContainer {
       margin-bottom: -110px;
       box-shadow: -50px 50px 0px -5px $primary;
-    }
-
-    .textContainer {
-      // padding-right: 160px;
     }
 
     h3 {

@@ -616,7 +616,7 @@ i {
   margin-top: 50px;
   text-align: center;
 }
-.about .wrapper p {
+.about p {
   text-align: left;
   margin-bottom: 40px;
 }
@@ -966,11 +966,59 @@ i {
   white-space: nowrap;
 }
 
+@media (max-width: 1300px) {
+  .blog .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blog .imgContainer {
+    width: 70%;
+  }
+  .blog .textContainer {
+    margin-top: 80px;
+    width: 90%;
+  }
+  .blog .rowOne .textContainer {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    text-align: right;
+  }
+  .blog .rowTwo {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .blog .rowTwo .imgContainer {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .blog .rowTwo .textContainer {
+    text-align: left;
+    margin-top: 200px;
+  }
+  .blog .rowTwo h3 {
+    text-align: left;
+  }
+  .blog .rowTwo .btnContainer {
+    text-align: left;
+  }
+  .blog .inner {
+    max-width: 100%;
+  }
+}
 @media (max-width: 1200px) {
   .homeHeader .imgContainer {
     bottom: -150px;
     min-width: 600px;
     width: 50%;
+  }
+
+  .about .wrapper {
+    margin-top: 0;
   }
 }
 @media (max-width: 1000px) {
@@ -983,8 +1031,20 @@ i {
   .homeHeader .imgContainer {
     min-width: 480px;
   }
+
+  .blog .imgContainer {
+    width: 90%;
+  }
 }
 @media (max-width: 768px) {
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  h3 {
+    font-size: 1.4;
+  }
+
   .homeHeader .wrapper {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
@@ -1006,6 +1066,10 @@ i {
   label {
     display: block;
   }
+
+  .about p {
+    text-align: center;
+  }
 }
 @media (max-width: 520px) {
   .homeHeader {
@@ -1024,5 +1088,19 @@ i {
 
   .mobileNav {
     max-width: 80%;
+  }
+
+  .about {
+    padding-top: 150px;
+  }
+
+  .blog .row .textContainer {
+    text-align: center;
+  }
+  .blog .row h3 {
+    text-align: center;
+  }
+  .blog .row .btnContainer {
+    text-align: center;
   }
 }
