@@ -24,9 +24,7 @@ $breakpointExtraSmall: 520px;
     }
 
     .imgContainer {
-      bottom: -150px;
       min-width: 480px;
-      width: 50%;
     }
   }
 }
@@ -39,15 +37,13 @@ $breakpointExtraSmall: 520px;
     }
 
     h1 {
-      font-size: 3.5rem;
+      font-size: 3rem;
       text-align: right;
-      margin-top: 100px;
+      margin-top: 50px;
     }
 
     .imgContainer {
-      bottom: -150px;
-      min-width: 480px;
-      width: 50%;
+      min-width: 400px;
     }
   }
 
@@ -55,7 +51,28 @@ $breakpointExtraSmall: 520px;
   .nav {
     display: none;
   }
+
   label {
     display: block;
+  }
+}
+
+@media (max-width: $breakpointExtraSmall) {
+  .homeHeader {
+    height: 60vh;
+    h1 {
+      font-size: 2.2rem;
+    }
+    .imgContainer {
+      min-width: 75%;
+      bottom: -100px;
+      border-top: 40px solid $primary;
+      border-bottom: 40px solid $primary;
+      border-left: 30px solid $primary;
+    }
+  }
+
+  .mobileNav {
+    max-width: 80%;
   }
 }

@@ -981,9 +981,7 @@ i {
     font-size: 5rem;
   }
   .homeHeader .imgContainer {
-    bottom: -150px;
     min-width: 480px;
-    width: 50%;
   }
 }
 @media (max-width: 768px) {
@@ -993,14 +991,12 @@ i {
             justify-content: flex-start;
   }
   .homeHeader h1 {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: right;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .homeHeader .imgContainer {
-    bottom: -150px;
-    min-width: 480px;
-    width: 50%;
+    min-width: 400px;
   }
 
   .nav {
@@ -1009,5 +1005,24 @@ i {
 
   label {
     display: block;
+  }
+}
+@media (max-width: 520px) {
+  .homeHeader {
+    height: 60vh;
+  }
+  .homeHeader h1 {
+    font-size: 2.2rem;
+  }
+  .homeHeader .imgContainer {
+    min-width: 75%;
+    bottom: -100px;
+    border-top: 40px solid #fdfa69;
+    border-bottom: 40px solid #fdfa69;
+    border-left: 30px solid #fdfa69;
+  }
+
+  .mobileNav {
+    max-width: 80%;
   }
 }
