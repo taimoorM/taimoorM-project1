@@ -29,7 +29,7 @@ $breakpointExtraSmall: 520px;
 
     .rowTwo {
       flex-direction: column-reverse;
-
+      align-items: flex-start;
       .imgContainer {
         align-self: flex-end;
       }
@@ -39,10 +39,7 @@ $breakpointExtraSmall: 520px;
         margin-top: 200px;
       }
 
-      h3 {
-        text-align: left;
-      }
-
+      h3,
       .btnContainer {
         text-align: left;
       }
@@ -89,6 +86,38 @@ $breakpointExtraSmall: 520px;
   .blog {
     .imgContainer {
       width: 90%;
+    }
+
+    .rowOne .textContainer,
+    .rowTwo .textContainer {
+      text-align: center;
+
+      h3,
+      .btnContainer {
+        text-align: center;
+      }
+    }
+  }
+
+  //Home > Info
+  .info {
+    padding: 50px 0;
+
+    .infoContainer {
+      width: 100%;
+
+      &:first-child {
+        margin-top: 0;
+      }
+    }
+  }
+
+  //Home > Profile
+  .profile {
+    .imgContainer {
+      min-width: 40%;
+      display: flex;
+      align-items: center;
     }
   }
 }
