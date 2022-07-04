@@ -32,7 +32,7 @@
   }
 
   .imgContainer {
-    min-width: 40%;
+    min-width: 43%;
   }
 
   .textContainer {
@@ -40,7 +40,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-    width: 40%;
+    width: 43%;
   }
 
   .inner {
@@ -61,10 +61,7 @@
     .imgContainer {
       justify-self: flex-start;
       margin-top: -114px;
-
-      img {
-        box-shadow: 50px 40px 0px -5px $primary;
-      }
+      box-shadow: 50px 40px 0px -5px $primary;
     }
 
     .textContainer {
@@ -74,7 +71,7 @@
 
   .rowTwo {
     .imgContainer {
-      margin-bottom: -130px;
+      margin-bottom: -110px;
       box-shadow: -50px 50px 0px -5px $primary;
     }
 
