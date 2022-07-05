@@ -787,6 +787,15 @@ i {
 }
 .gallery .imgContainer {
   width: calc(33.3333333333% - 30px);
+  cursor: pointer;
+  -webkit-transition: -webkit-transform 0.25s;
+  transition: -webkit-transform 0.25s;
+  transition: transform 0.25s;
+  transition: transform 0.25s, -webkit-transform 0.25s;
+}
+.gallery .imgContainer:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .footer {
@@ -1099,8 +1108,44 @@ i {
     display: block;
   }
 
+  .about {
+    padding-bottom: 120px;
+  }
   .about p {
     text-align: center;
+  }
+
+  .profile .bannerContainer {
+    height: 300px;
+  }
+
+  .profile .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+  }
+  .profile .wrapper .imgContainer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-bottom: 80px;
+  }
+  .profile .wrapper .textContainer {
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .gallery {
+    padding: 0;
+  }
+  .gallery .wrapper {
+    width: 100%;
+  }
+  .gallery .imgContainer {
+    width: auto;
   }
 }
 @media (max-width: 520px) {
@@ -1113,13 +1158,22 @@ i {
   .homeHeader .imgContainer {
     min-width: 75%;
     bottom: -100px;
-    border-top: 40px solid #fdfa69;
-    border-bottom: 40px solid #fdfa69;
+    border-top: 30px solid #fdfa69;
+    border-bottom: 30px solid #fdfa69;
     border-left: 30px solid #fdfa69;
   }
 
   .mobileNav {
     max-width: 80%;
+  }
+  .mobileNav .social {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mobileNav i {
+    font-size: 2rem;
   }
 
   .about {
@@ -1134,5 +1188,20 @@ i {
   }
   .blog .row .btnContainer {
     text-align: center;
+  }
+
+  .gallery .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 50px 0;
+    width: 90%;
+  }
+  .gallery .wrapper .imgContainer {
+    margin: 0 auto;
+  }
+  .gallery .wrapper .imgContainer:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
