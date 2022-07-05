@@ -1204,13 +1204,14 @@ i.fa-x {
             align-items: center;
     padding-bottom: 100px;
   }
-  .contactMain .wrapper .contactForm {
+
+  .contactForm {
     width: 100%;
     -webkit-box-shadow: none;
             box-shadow: none;
     margin-bottom: 150px;
   }
-  .contactMain .wrapper .contactForm .form {
+  .contactForm .form {
     -webkit-box-shadow: 0px 15px 0px 5px #fdfa69;
             box-shadow: 0px 15px 0px 5px #fdfa69;
   }
@@ -1231,7 +1232,7 @@ i.fa-x {
   }
 
   h3 {
-    font-size: 1.4;
+    font-size: 1.4rem;
   }
 
   .form {
@@ -1370,6 +1371,10 @@ i.fa-x {
   }
 }
 @media (max-width: 520px) {
+  h2 {
+    font-size: 1.6rem;
+  }
+
   .homeHeader {
     height: 60vh;
   }
@@ -1428,20 +1433,35 @@ i.fa-x {
     margin-bottom: 30px;
   }
 
+  .blogMain {
+    padding-bottom: 50px;
+  }
+
+  .sidebar {
+    margin-top: 80px;
+  }
   .sidebar .imgContainer {
     max-width: none;
   }
 
-  .sidebar .sidebarContainer {
+  .sidebarContainer {
     width: 100%;
     max-width: none;
   }
 
   .contactHeader h1 {
     font-size: 2rem;
+    text-align: center;
   }
 
+  .contactForm {
+    margin-bottom: 100px;
+  }
   .contactForm .form {
-    padding-top: 50px;
+    padding: 30px 15px;
+  }
+
+  .contactMain .wrapper {
+    width: 98%;
   }
 }
