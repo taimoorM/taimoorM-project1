@@ -248,6 +248,23 @@ $breakpointExtraSmall: 520px;
     }
   }
 
+  //Home > Info
+  .info {
+    .infoContainer {
+      flex-direction: column;
+    }
+
+    .iconContainer {
+      display: flex;
+      justify-content: center;
+      margin: 0 0 25px 0;
+    }
+
+    .textContainer {
+      text-align: center;
+    }
+  }
+
   //Home > Profile
   .profile .bannerContainer {
     height: 300px;
@@ -281,27 +298,46 @@ $breakpointExtraSmall: 520px;
   }
 
   //Blog> Header
-  .blogHeader h1 {
-    margin-bottom: 100px;
-    font-size: 3rem;
+  .blogHeader {
+    height: 70vh;
+    h1 {
+      margin-bottom: 100px;
+      font-size: 3rem;
+      text-align: center;
+      width: 100%;
+    }
   }
 
+  .posts {
+    margin-top: -260px;
+  }
   .postContainer {
     text-align: center;
   }
 
+  .profileImg {
+    min-width: 50px;
+    margin-right: 20px;
+  }
+
   //Contact Header
-  .contactHeader .headingContainer {
-    align-items: flex-start;
+  .contactHeader {
+    height: 400px;
+    .headingContainer {
+      align-items: flex-start;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      margin-top: 100px;
+    }
   }
 
-  .contactHeader h1 {
-    font-size: 2.5rem;
-    margin-top: 100px;
-  }
-
-  .contactForm .form {
-    padding-top: 80px;
+  .contactForm {
+    margin-top: -220px;
+    .form {
+      padding-top: 80px;
+    }
   }
 }
 
@@ -321,8 +357,6 @@ $breakpointExtraSmall: 520px;
   }
 
   .mobileNav {
-    max-width: 80%;
-
     .social {
       flex-direction: column;
     }
@@ -350,6 +384,11 @@ $breakpointExtraSmall: 520px;
     .btnContainer {
       text-align: center;
     }
+  }
+
+  .postContainer,
+  .commentsContainer {
+    padding-left: 30px;
   }
 
   //Home > Gallery

@@ -150,8 +150,7 @@
   }
 
   p {
-    margin-bottom: 50px;
-    margin-right: 20px;
+    margin: 0 20px 50px 0;
   }
 }
 
@@ -167,10 +166,15 @@
   .imgContainer {
     width: calc((100% / 3) - 30px);
     cursor: pointer;
-    transition: transform 0.25s;
+    transition: 0.25s;
+    overflow: hidden;
 
-    &:hover {
-      transform: scale(1.1);
+    img {
+      transition: transform 0.5s;
+      &:hover {
+        transform: scale(1.2);
+        opacity: 0.9;
+      }
     }
   }
 }

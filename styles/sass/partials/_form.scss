@@ -51,7 +51,7 @@
     &:focus,
     &:active {
       outline: none;
-      border: 2px solid $primary;
+      border-color: $primary;
     }
   }
 }

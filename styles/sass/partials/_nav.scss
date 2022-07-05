@@ -32,17 +32,24 @@
     &:hover::after {
       width: 100%;
     }
+
+    &:active::after {
+      width: 100%;
+    }
   }
 }
 
 .mobileNav {
   background-color: $black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   position: fixed;
-  top: 0;
-  left: -450px;
+  top: -100%;
+  left: 0;
   height: 100vh;
   width: 100%;
-  max-width: 450px;
+  // max-width: 450px;
   color: $white;
   font-family: $headingFont;
   font-size: 1.5rem;
@@ -77,17 +84,39 @@ label {
   cursor: pointer;
   text-align: right;
   display: none;
+  z-index: 30;
 }
 
 input[type="checkbox"] {
   opacity: 0;
   position: absolute;
   &:checked ~ .mobileNav {
-    left: 0;
+    top: 0;
+  }
+
+  &:checked ~ label {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    transition: 0.3s;
+
+    i.fa-bars {
+      display: none;
+    }
+
+    i.fa-x {
+      opacity: 1;
+    }
   }
 }
 
 i {
   font-size: 2.5rem;
-  color: $black;
+  &.fa-bars {
+    color: $black;
+  }
+  &.fa-x {
+    opacity: 0;
+    color: $white;
+  }
 }
