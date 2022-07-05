@@ -4,19 +4,53 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="/styles/style.css" />
     <title>Blog</title>
   </head>
   <body>
     <header class="blogHeader">
       <div class="wrapper">
-        <nav>
+        <!-- NAV -->
+        <nav class="nav">
           <ul>
-            <li><a href="./index.html">Home</a></li>
+            <li><a href="#">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <input type="checkbox" id="toggleNav" />
+        <label for="toggleNav" class="menuButton">
+          <i class="fa-solid fa-bars"></i>
+        </label>
+        <nav class="mobileNav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+          <ul class="social">
+            <li>
+              <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+            </li>
           </ul>
         </nav>
         <div class="headingContainer">
@@ -104,12 +138,7 @@
               <input type="text" id="email" placeholder="Email address" />
             </fieldset>
             <label for="comment" class="sr-only">Comment</label>
-            <textarea
-              id="comment"
-              cols="30"
-              rows="10"
-              placeholder="Comment"
-            ></textarea>
+            <textarea id="comment" placeholder="Comment"></textarea>
             <button type="submit" class="button">Post Comment</button>
           </form>
         </div>

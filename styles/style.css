@@ -536,7 +536,7 @@ i {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 50px;
-  background-color: #fafafa;
+  background-color: transparent;
 }
 .form fieldset {
   padding: 0;
@@ -551,7 +551,6 @@ i {
 .form input {
   width: 50%;
   border: none;
-  background-color: #fafafa;
   border-bottom: 2px solid #4ceea7;
   font-family: "Roboto", sans-serif;
   color: #2c2c2c;
@@ -582,11 +581,11 @@ i {
   border: 2px solid #4ceea7;
   padding: 20px;
   color: #2c2c2c;
-  background-color: #fafafa;
   font-family: "Roboto", sans-serif;
   margin-bottom: 50px;
   -webkit-transition: border 0.3s;
   transition: border 0.3s;
+  height: 150px;
 }
 .form textarea::-webkit-input-placeholder {
   color: #2c2c2c;
@@ -1031,6 +1030,11 @@ i {
   .about .wrapper {
     margin-top: 0;
   }
+
+  .blogHeader h1 {
+    width: 60%;
+    margin-bottom: 50px;
+  }
 }
 @media (max-width: 1000px) {
   .homeHeader {
@@ -1076,6 +1080,38 @@ i {
         -ms-flex-align: center;
             align-items: center;
   }
+
+  .blogMain {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogMain .posts {
+    width: 99%;
+    max-width: none;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .blogMain .form {
+    padding: 0;
+  }
+
+  .sidebar {
+    max-width: 90%;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    margin-top: 100px;
+  }
+  .sidebar .imgContainer {
+    max-width: 70%;
+  }
+  .sidebar .sidebarContainer {
+    width: 70%;
+  }
 }
 @media (max-width: 768px) {
   h2 {
@@ -1084,6 +1120,14 @@ i {
 
   h3 {
     font-size: 1.4;
+  }
+
+  .form fieldset {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form input {
+    width: 100%;
   }
 
   .homeHeader .wrapper {
@@ -1147,6 +1191,15 @@ i {
   .gallery .imgContainer {
     width: auto;
   }
+
+  .blogHeader h1 {
+    margin-bottom: 100px;
+    font-size: 3rem;
+  }
+
+  .postContainer {
+    text-align: center;
+  }
 }
 @media (max-width: 520px) {
   .homeHeader {
@@ -1203,5 +1256,14 @@ i {
   }
   .gallery .wrapper .imgContainer:not(:last-child) {
     margin-bottom: 30px;
+  }
+
+  .sidebar .imgContainer {
+    max-width: none;
+  }
+
+  .sidebar .sidebarContainer {
+    width: 100%;
+    max-width: none;
   }
 }
