@@ -73,6 +73,12 @@ $breakpointExtraSmall: 520px;
     width: 60%;
     margin-bottom: 50px;
   }
+
+  //Contact Header
+
+  .contactHeader h1 {
+    font-size: 3.5rem;
+  }
 }
 
 @media (max-width: $breakpointMedium) {
@@ -156,6 +162,36 @@ $breakpointExtraSmall: 520px;
       width: 70%;
     }
   }
+
+  //Contact Header
+  .contactHeader h1 {
+    margin-left: 0;
+  }
+  //Contact Main
+  .contactMain .wrapper {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding-bottom: 100px;
+
+    .contactForm {
+      width: 100%;
+      box-shadow: none;
+      margin-bottom: 150px;
+
+      .form {
+        box-shadow: 0px 15px 0px 5px $primary;
+      }
+    }
+  }
+
+  .contactInfo {
+    margin: 0;
+    text-align: center;
+
+    ul {
+      justify-content: center;
+    }
+  }
 }
 
 @media (max-width: $breakpointSmall) {
@@ -169,6 +205,7 @@ $breakpointExtraSmall: 520px;
   }
 
   .form {
+    padding: 30px;
     fieldset {
       flex-wrap: wrap;
     }
@@ -252,6 +289,20 @@ $breakpointExtraSmall: 520px;
   .postContainer {
     text-align: center;
   }
+
+  //Contact Header
+  .contactHeader .headingContainer {
+    align-items: flex-start;
+  }
+
+  .contactHeader h1 {
+    font-size: 2.5rem;
+    margin-top: 100px;
+  }
+
+  .contactForm .form {
+    padding-top: 80px;
+  }
 }
 
 @media (max-width: $breakpointExtraSmall) {
@@ -324,5 +375,14 @@ $breakpointExtraSmall: 520px;
   .sidebar .sidebarContainer {
     width: 100%;
     max-width: none;
+  }
+
+  //Contact Header
+  .contactHeader h1 {
+    font-size: 2rem;
+  }
+
+  .contactForm .form {
+    padding-top: 50px;
   }
 }

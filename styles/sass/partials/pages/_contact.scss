@@ -13,6 +13,7 @@
   margin-top: -425px;
 
   .form {
+    background-color: $white;
     padding-top: 100px;
     box-shadow: -45px 45px 0px -5px $primary;
   }
@@ -29,6 +30,10 @@
     li:not(last-child) {
       margin-right: 20px;
     }
+  }
+
+  i {
+    font-size: 1.5rem;
   }
 
   h4 {
