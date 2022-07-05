@@ -55,6 +55,12 @@
     margin-bottom: 20px;
   }
 
+  a {
+    transition: 0.25s;
+    &:hover {
+      color: #7e7c7c;
+    }
+  }
   .social {
     display: flex;
     justify-content: center;
