@@ -1444,8 +1444,7 @@ i.fa-x {
   .sidebar .imgContainer {
     max-width: none;
   }
-
-  .sidebarContainer {
+  .sidebar .sidebarContainer {
     width: 100%;
     max-width: none;
   }
