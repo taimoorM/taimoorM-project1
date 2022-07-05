@@ -17,6 +17,7 @@
     transition: 0.3s border;
     position: relative;
 
+    //Animation inspired by https://codepen.io/mxttsco/pen/KgodYm
     &::after {
       content: "";
       position: absolute;
